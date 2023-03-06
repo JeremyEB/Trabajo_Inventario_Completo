@@ -1,0 +1,21 @@
+<app-header></app-header>
+<div class="container-login">
+    <div class="container-login-2">
+        <div class="col">
+            <div class="col">
+                <label>Usuario: </label>
+                <input type="text" [(ngModel)]="Usuario" class="form-control" placeholder="Usuario">
+            </div>
+            <br>
+            <br>
+            <div class="col">
+                <label>Constraseña:</label>
+                <input type="password" [(ngModel)]="Password" class="form-control" placeholder="Contraseña">
+            </div>
+            <br>
+            <br>
+            <button type="button" class="btn btn-primary" (click)="menu()">Ingresar</button>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

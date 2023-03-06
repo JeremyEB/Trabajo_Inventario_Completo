@@ -1,0 +1,17 @@
+.container-login{
+    background-color:#ECF0F1;
+    padding:70px;
+    height:80vh;
+}
+
+.container-login-2{
+    width:30%;
+    margin:auto;
+    background-color:white;
+    height:90%;
+    padding:20px;
+}
+
+label{
+    font-size:26px;
+}

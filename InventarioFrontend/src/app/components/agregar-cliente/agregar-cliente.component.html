@@ -1,0 +1,27 @@
+<app-header2></app-header2>
+<br>
+<div class="container-createCliente">
+    <div class="parrafo">
+        <h1>Agregando Cliente</h1>
+    </div>
+    <br>
+    <form method="post">
+        <div class="form-group">
+            <label>Nombre Completo:</label>
+            <input type="text" class="form-control" placeholder="Nombre y Apellido del Cliente" [(ngModel)]="c_cliente.Nombre_Apellido" [ngModelOptions]="{standalone: true}" style="text-transform:capitalize">
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Telefono:</label>
+            <input type="text" class="form-control" placeholder="Telefono del Cliente(xxx-xxx-xxxx)" [(ngModel)]="c_cliente.Telefono" [ngModelOptions]="{standalone: true}">
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Cedula:</label>
+            <input type="text" class="form-control" placeholder="Cedula del Cliente(xxx-xxxxxxx-x)" [(ngModel)]="c_cliente.Cedula" [ngModelOptions]="{standalone: true}">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success" (click)="onAddCliente(c_cliente)">Agregar</button>
+    </form>
+</div>
+<app-footer></app-footer>

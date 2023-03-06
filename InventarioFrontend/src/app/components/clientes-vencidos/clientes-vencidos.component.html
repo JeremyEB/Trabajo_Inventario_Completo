@@ -1,0 +1,120 @@
+<app-header2></app-header2>
+<!--<br>
+
+<div class="col">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Acciones</th>
+                <th>ID Factura</th>
+                <th>Monto Solicitado</th>
+                <th>Tasa</th>
+                <th>Cuotas</th>
+                <th>Cuotas Mensuales</th>
+                <th>Monto A Pagar</th>
+                <th>Capital</th>
+                <th>Interes</th>
+                <th>Fecha</th>
+                <th>Usuario_ID</th>
+                <th>Nombre y Apellido</th>
+                <th>Telefono</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of dataTable">
+                <td><button type="button" class="btn btn-secondary" (click)="onSetData(item)">Seleccionar</button></td>
+                <td>{{item.ID_Facturas}}</td>
+                <td>{{item.Monto_Solicitado}}</td>
+                <td>{{item.Tasa}}</td>
+                <td>{{item.Cuotas}}</td>
+                <td>{{item.Cuotas_Mensuales}}</td>
+                <td>{{item.Monto_Pagar}}</td>
+                <td>{{item.Capital}}</td>
+                <td>{{item.Interes}}</td>
+                <td>{{item.Fecha}}</td>
+                <td>{{item.Usuario_ID}}</td>
+                <td>{{item.Nombre_Apellido}}</td>
+                <td>{{item.Telefono}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<button type="button" class="btn btn-success" (click)="modal.open(prueba)">Modal</button>
+<ng-template #prueba let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Prueba</h4>
+        <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <form>
+            <label>ID Facturas</label>
+            <input type="number" class="form-control" [(ngModel)]="u_Factura.ID_Facturas" [ngModelOptions]="{standalone: true}" disabled="true">
+            <label>Monto Solicitado</label>
+            <input type="number" class="form-control" [(ngModel)]="u_Factura.Monto_Solicitado" [ngModelOptions]="{standalone: true}">
+            <label>Tasa</label>
+            <input type="number" class="form-control" [(ngModel)]="u_Factura.Tasa" [ngModelOptions]="{standalone: true}">
+            <label>Cuotas</label>
+            <input type="number" class="form-control" [(ngModel)]="u_Factura.Cuotas" [ngModelOptions]="{standalone: true}">
+            <label>Cuotas Mensuales</label>
+            <input type="number" class="form-control" [(ngModel)]="u_Factura.Cuotas_Mensuales" [ngModelOptions]="{standalone: true}">
+            <label>Monto a Pagar</label>
+            <input type="number" class="form-control" [(ngModel)]="u_Factura.Monto_Pagar" [ngModelOptions]="{standalone: true}">
+            <label>Capital</label>
+            <input type="number" class="form-control" [(ngModel)]="u_Factura.Capital" [ngModelOptions]="{standalone: true}">
+            <label>Interes</label>
+            <input type="number" class="form-control" [(ngModel)]="u_Factura.Interes" [ngModelOptions]="{standalone: true}">
+            <label>Fecha</label>
+            <input type="date" class="form-control" [(ngModel)]="u_Factura.Fecha" [ngModelOptions]="{standalone: true}">
+            <label>Usuario_ID</label>
+            <input type="number" class="form-control" [(ngModel)]="u_Factura.Usuario_ID" [ngModelOptions]="{standalone: true}">
+            <label>Nombre y Apellido</label>
+            <input type="text" class="form-control" [(ngModel)]="u_Factura.Nombre_Apellido" [ngModelOptions]="{standalone: true}">
+            <label>Telefono</label>
+            <input type="text" class="form-control" [(ngModel)]="u_Factura.Telefono" [ngModelOptions]="{standalone: true}">
+            <button type="button" class="btn btn-warning" (click)="onUpdateFactura(u_Factura)">Modificar</button>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-danger" (click)="modal.close()">Cerrar</button>
+    </div>
+</ng-template>-->
+<div class="container">
+    <div class="parrafo">
+        <h1>Probando agregar cliente</h1>
+    </div>
+    <br>
+    <form>
+        <div class="form-group">
+            <label>Monto Solicitado</label>
+            <input type="number" class="form-control" placeholder="Monto_Solicitado" [(ngModel)]="h_facturas.Monto_Solicitado" [ngModelOptions]="{standalone: true}">
+            <label>Tasa</label>
+            <input type="number" class="form-control" placeholder="Tasa" [(ngModel)]="h_facturas.Tasa" [ngModelOptions]="{standalone: true}">
+            <label>Cuotas</label>
+            <input type="number" class="form-control" [(ngModel)]="h_facturas.Cuotas" [ngModelOptions]="{standalone: true}">
+            <label>Cuotas Mensuales</label>
+            <input type="number" class="form-control" [(ngModel)]="h_facturas.Cuotas_Mensuales" [ngModelOptions]="{standalone: true}">
+            <label>Monto a Pagar</label>
+            <input type="number" class="form-control" [(ngModel)]="h_facturas.Monto_Pagar" [ngModelOptions]="{standalone: true}">
+            <label>Capital</label>
+            <input type="number" class="form-control" [(ngModel)]="h_facturas.Capital" [ngModelOptions]="{standalone: true}">
+            <label>Interes</label>
+            <input type="number" class="form-control" [(ngModel)]="h_facturas.Interes" [ngModelOptions]="{standalone: true}">
+            <label>Fecha</label>
+            <input type="date" class="form-control" [(ngModel)]="h_facturas.Fecha" [ngModelOptions]="{standalone: true}">
+            <label>Nombre y Apellido</label>
+            <input type="text" class="form-control" [(ngModel)]="h_facturas.Nombre_Apellido" [ngModelOptions]="{standalone: true}">
+            <label>Telefono</label>
+            <input type="text" class="form-control" [(ngModel)]="h_facturas.Telefono" [ngModelOptions]="{standalone: true}">
+            <label>Cedula</label>
+            <input type="text" class="form-control" [(ngModel)]="h_facturas.Cedula" [ngModelOptions]="{standalone: true}">
+            <label>Factura_ID</label>
+            <input type="number" class="form-control" [(ngModel)]="h_facturas.Factura_ID" [ngModelOptions]="{standalone: true}">
+            <label>Usuario_ID</label>
+            <input type="number" class="form-control" [(ngModel)]="h_facturas.Usuario_ID" [ngModelOptions]="{standalone: true}">
+        </div>
+        <button type="button" class="btn btn-success" (click)="onAddHistorialFactura(h_facturas)">Guardar</button>
+    </form>
+</div>
+<app-footer></app-footer>
